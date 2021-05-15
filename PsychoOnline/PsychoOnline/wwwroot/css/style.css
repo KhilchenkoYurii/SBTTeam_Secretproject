@@ -1,0 +1,146 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial Regular, serif;
+}
+
+.hhh{
+	width: 100%;
+	height: 41px;
+	background-color: grey;
+}
+
+.logo img
+{
+	width: 3%;
+}
+
+.textLogo{
+	top: 7px;
+	margin-left: 1%;
+	display: inline-block;
+	position: absolute;
+}
+
+.butt{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 4%;
+	height: 20px;
+	border-radius: 20px;
+	font-size: 12px;
+}
+
+.container{
+	margin-top: 2%;
+}
+
+.form{
+	padding-left: 2%;
+	margin:0 auto;
+	width: 80%;
+	height: 35vw;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.names{
+	width: 45%;
+	display: inline-block;
+}
+
+.in{
+	float: right;
+	width: 55%;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li button
+{
+	margin-top: 0.5%;
+	margin-right: 5px;
+}
+
+p{
+	text-align: center;
+}
+
+.chat
+{
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 10%;
+	border-radius: 20px;
+	border: 1px solid #585858;
+}
+
+.livechat
+{
+	border-radius: 20px;
+	border: 1px solid #585858;
+	text-align: center;
+	width: 100px;
+	margin-top: 1%;
+	margin-left: 2%;	
+}
+
+.indicator
+{
+  height: 2px;
+  width: 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right:5%;
+  margin-bottom: 5%;
+}
+
+.txtarea
+{
+	border-radius: 20px;
+	width: 550px;
+	height: 190px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 3%;	
+}
+
+.txtinput
+{
+	margin-top: 2%;
+	border-radius: 20px;
+	width: 478px;
+	margin-left: 1%;
+	display: inline-block;
+}
+
+.btnsize
+{
+	width: 12%;
+	border-radius: 0;
+	color: black;
+	background-color: transparent;
+	border: 1px solid #585858;
+}
+
+.btn_header
+{
+	float: right;
+	width: 5%;
+	border-radius: 20px;
+	color: black;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid #585858;	
+}
