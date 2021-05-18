@@ -28,10 +28,10 @@ namespace PsychoWeb.Models
                 await roleManager.CreateAsync(new IdentityRole("customer"));
             }
 
-            if (await roleManager.FindByNameAsync("manager") == null)
-            {
-                await roleManager.CreateAsync(new IdentityRole("manager"));
-            }
+            //if (await roleManager.FindByNameAsync("manager") == null)
+            //{
+            //    await roleManager.CreateAsync(new IdentityRole("manager"));
+            //}
 
             if (await userManager.FindByNameAsync(adminEmail) == null)
             {
