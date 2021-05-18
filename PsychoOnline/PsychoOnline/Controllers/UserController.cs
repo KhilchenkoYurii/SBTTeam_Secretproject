@@ -24,7 +24,34 @@ namespace PsychoOnline.Controllers
 
         public async Task<IActionResult> Index()
         {
-            int customerId = unitOfWork.Customers.GetAll().Where(c => c.Email == User.Identity.Name).First().CustomerId;
+            var toCheck = unitOfWork;
+            //var isDoctor = User
+            var isDoctor = false;
+            foreach (var p in unitOfWork.Psychologists.GetAll())
+            {
+                if (p.Name + p.Surname == User.Identity.Name)
+                {
+                    isDoctor = true;
+                }
+            }
+            //var isDoctor = false;
+            int customerId;
+            try
+            {
+                var hz = User.Identity.Name;
+                //var hz = toCheck;
+                customerId = isDoctor
+                ? unitOfWork.Psychologists.GetAll().Where(c => c.Name + c.Surname == User.Identity.Name).First().PsychologistId
+                : unitOfWork.Customers.GetAll().Where(c => c.Name + c.Surname == User.Identity.Name).First().CustomerId;
+            }
+            catch
+            {
+                var hz = User.Identity.Name;
+                //var hz = toCheck;
+                customerId = isDoctor
+                ? unitOfWork.Psychologists.GetAll().Where(c => c.Email == User.Identity.Name).First().PsychologistId
+                : unitOfWork.Customers.GetAll().Where(c => c.Email == User.Identity.Name).First().CustomerId;
+            }
             Customer customer = await unitOfWork.Customers.Get(customerId);
             var customerRecords = new List<Record>();
 
