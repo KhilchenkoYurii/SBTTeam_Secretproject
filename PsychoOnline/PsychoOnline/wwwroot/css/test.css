@@ -1,0 +1,139 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.hhh {
+    width: 100%;
+    height: 41px;
+    background-color: grey;
+    display: inline-block;
+}
+
+.logo {
+    height: 100%;
+    margin-left: 1%;
+    display: inline-block;
+    background-color: purple;
+}
+
+.logo-img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.textLogo {
+    top: 7px;
+    display: inline-block;
+    position: absolute;
+    background-color: purple;
+}
+
+.btn_header {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    background-color: purple;
+}
+
+.butt2 {
+    margin-top: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: purple;
+}
+
+.create {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.forms {
+    padding-left: 3%;
+    padding-bottom: 1%;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.names {
+    width: 47%;
+    margin-top: 10px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.names2 {
+    width: 95%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.in {
+    float: right;
+    width: 43%;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.in2 {
+    float: right;
+    width: 72%;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.no-photo {
+    display: inline-block;
+    height: 100px;
+    width: 150px;
+}
+
+.birth {
+    width: 50%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.photo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.info {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+}

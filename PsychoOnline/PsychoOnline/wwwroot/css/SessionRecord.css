@@ -1,0 +1,302 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.hhh{
+	height: 51px;
+	background-color: grey;
+}
+
+.logo{
+	float:left;
+	margin-top: 5px;
+	height: 100%;
+	margin-left: 1%;
+	display: inline-block;
+    background-image:url(~/images/logo.png);
+}
+.form{
+    padding: 0;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.logo-img{
+	height: 40px;
+	width: 40px;
+}
+
+.textLogo{
+	float:left;
+	margin-top: 5px;
+	top: 7px;
+	display: inline-block;
+	position: absolute;
+}
+
+.btn_headers{
+	text-decoration: none;
+    display: inline-block;
+    padding: 0;
+	margin-right: 10px;
+	width: 100px;
+	height: 39px;
+	border-radius: 20px;
+	font-size: 12px;					
+	float: right;						
+}
+
+.btn_login{	
+    display: inline-block;
+    padding: 0;
+	float: right;
+	width: 30%;
+	margin-right: 3.5%;
+	border-radius: 20px;
+	font-size: 15px;	
+}
+
+.form{
+    padding: 0;
+    margin-top: 5px;
+    display: inline-block;
+    float: right;
+}
+
+.login_txt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.login_window
+{
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 90%;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1%;
+	height: 40%;
+}
+
+.btn_create
+{
+	display: inline-block;
+	margin-left: 3%;
+	font-size: 22px;
+	text-align: center;
+}
+
+.inp
+{
+	display: inline;
+	width: 68%;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.txtin
+{
+	display: inline-block;
+	margin:0;
+	padding:0;
+	width:25%;
+	margin-top: 2%;
+	margin-left: 3%;
+	margin-bottom: 2%;
+}
+
+.btn_send
+{
+	display: inline-block;
+    padding: 0;
+	float: right;
+	width: 30%;
+	margin-right: 3.5%;
+	border-radius: 20px;
+	font-size: 15px;
+}
+
+.menu
+{
+	display: inline-block;
+	width: 700px;
+	text-decoration: none;
+	font-size:20px;
+	padding:0;
+	margin:0;
+	margin-top:0.5%;
+	margin-left:14%;
+}
+
+.menu li
+{
+	list-style-type:none;
+	float: left;
+	text-decoration: none;
+	margin-left:19%;
+}
+
+.menu li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.mob_bar
+{
+	background: darkgray;
+	width:100%;
+	box-sizing: border-box;
+	color: white;
+	font-size:30px;
+	display: none;
+	text-align: left;
+	height: 100%;
+}
+
+.mob_menu li
+{
+	text-align: center;
+}
+
+.bar
+{
+	margin-left: 10px;
+}
+
+.mob_menu li a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.menu li a:hover
+{
+	color: white;
+}
+
+.mob_menu li a:hover
+{
+	color: white;
+}
+
+@media (max-width:1225px)
+{
+	.mob_bar
+	{
+		display: block;
+	}
+	.hhh
+	{
+		display: none;
+	}
+
+	.mob_menu
+	{
+		list-style-type: none;
+		display: none;
+	}
+
+	.bar
+	{
+		display: inline-block;
+	}
+
+	.active
+	{
+		display:block;
+	}
+}
+
+.records{
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 75%;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.calendar{
+	vertical-align: top;
+	width: 20%;
+	padding: 0;
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.pick{
+	width: 50%;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.pickOption{
+	vertical-align: top;
+	height: 40px;
+	padding: 0;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.words{
+	display: inline-block;
+}
+
+.dateInput{
+	width: 65%;
+}
+
+p{
+	height: 50px;
+	vertical-align: top;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+.myForm{
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-bottom: 10px;
+}
+
+.inputField{
+	float: right;
+	width: 50%;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.text{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.info{
+	margin-top: 10px;
+	vertical-align: top;
+	width: 27%;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+.confirmButton{
+	width: 100%;
+	height: 60px;
+	font-size: 30px;
+}

@@ -1,0 +1,73 @@
+﻿@model PsychoWeb.ViewModels.RegisterView;
+@{
+    ViewData["Title"] = "Registry";
+}
+
+<head>
+    <meta charset="utf-8">
+    <title>Psycho.io</title>
+</head>
+<body>
+    <div class="container">
+        <p>New Account</p>
+        <form asp-controller="Account" asp-action="Register">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="forms">
+                <div class="row">
+                    <div class="names">
+                        First name:
+                        <span asp-validation-for="FirstName"></span>
+                        <input asp-for="FirstName" placeholder="First Name" class="in">
+                    </div>
+                    <div class="names">
+                        Second name:
+                        <span asp-validation-for="SecondName"></span>
+                        <input asp-for="SecondName" placeholder="Last Name" class="in">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="names2">
+                        Email:
+                        <span asp-validation-for="Email"></span>
+                        <input type="email" asp-for="Email" placeholder="Email" class="in2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="names2">
+                        Repeat Email:
+                        <span asp-validation-for="EmailConfirm"></span>
+                        <input asp-for="EmailConfirm" placeholder="EmailConfirm" class="in2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="names2">
+                        Password:
+                        <span asp-validation-for="Password"></span>
+                        <input asp-for="Password" placeholder="Password" class="in2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="names2">
+                        Repeat password:
+                        <span asp-validation-for="PasswordConfirm"></span>
+                        <input asp-for="PasswordConfirm" placeholder="PasswordConfirm" class="in2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="names2">
+                        Number:
+                        <span asp-validation-for="Phone"></span>
+                        <input asp-for="Phone" placeholder="Phone" class="in2">
+                    </div>
+                </div>
+            <div class="row">
+                <div class="names2">Date of birth:
+                    <span asp-validation-for="BirthDate"></span>
+                    <input asp-for="BirthDate" placeholder="BirthDate" class="in2">
+                </div>
+                </div>
+                <button class="create" action="">Create</button>
+            </div>
+        </form>
+    </div>
+</body>

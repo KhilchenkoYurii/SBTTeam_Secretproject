@@ -1,0 +1,39 @@
+﻿@model PsychoWeb.ViewModels.LoginView;
+@{
+    ViewData["Title"] = "Login";
+}
+
+<head>
+    <meta charset="utf-8">
+    <title>Psycho.io</title>
+</head>
+<body>
+<!-- Header -->  
+<div class="container-fluid">
+    <div class="login_txt">
+        Log in
+    </div>
+
+    <div class="login_window text-center">
+        <form method="post" asp-controller="Account" asp-action="Login">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="txtin">Email or number:</div>
+            <span asp-validation-for="Email"></span>
+            <input asp-for="Email" placeholder="Email" class="inp">
+            <div class="txtin">Password:</div>
+            <span asp-validation-for="Password"></span>
+            <input asp-for="Password" placeholder="Password" class="inp">
+
+            <button class="btn_login" type="submit" value="Log in">Log in</button>
+
+            <div class="btn_create ">
+                Are you not registered ?
+                <b><a asp-action="Register">CreateAccount</a></b>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+</body>
+
