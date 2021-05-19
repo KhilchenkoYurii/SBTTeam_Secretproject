@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model PsychoWeb.ViewModels.CustomerSettingView
+@{
+    ViewData["Title"] = "CustomerSettingPage";
+}
+<h2>Settings page</h2>
+
+<form asp-action="CustomerSettingPage" asp-controller="Account">
+    <div class="form-group">
+        <input type="hidden" asp-for="Id" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label">FirstName</label>
+        <input type="text" asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SecondName" class="control-label">SecondName</label>
+        <input type="text" asp-for="SecondName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label">Phone</label>
+        <input type="text" asp-for="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Email</label>
+        <input type="text" asp-for="Email" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="BirthDate" class="control-label">Birthday</label>
+        <input type="date" asp-for="BirthDate" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" style="margin: 2% 35%; width: 30%;" />
+    </div>
+</form>

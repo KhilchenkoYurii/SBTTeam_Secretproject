@@ -1,0 +1,37 @@
+﻿@model PsychoOnline.VIewModels.CreatePsychologistRecordView
+@{
+    ViewBag.Title = "New Record";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<h1>My records</h1>
+<form asp-action="Create" asp-controller="Manager">
+    <div class="form-group">
+        <label asp-for="Customers">Customer</label>
+        <select class="form-control" name="psychologistSelect">
+            @foreach (var customer in Model.Customers)
+            {
+                <option>@customer.Surname</option>
+            }
+        </select>
+    </div>
+    <div class="row">
+        <div class="names2">
+            Date of record:
+            <span asp-validation-for="AssignedDate"></span>
+            <input asp-for="AssignedDate" placeholder="AssignedDate" class="in2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="names2">
+            Time of record :
+            <span asp-validation-for="ATime"></span>
+            <input asp-for="ATime" placeholder="ATime" class="in2">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Add" class="btn btn-success" style="margin: 2% 35%; width: 30%;" />
+    </div>
+</form>
+
+
+

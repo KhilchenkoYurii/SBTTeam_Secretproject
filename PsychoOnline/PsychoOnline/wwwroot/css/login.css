@@ -1,0 +1,119 @@
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.hhh{
+	height: 41px;
+	background-color: grey;
+}
+
+.logo{
+	height: 100%;
+	margin-left: 1%;
+	display: inline-block;
+    background-image:url(~/images/logo.png);
+}
+
+.logo .img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+
+.form{
+    padding: 0;
+    margin-top: 5px;
+    display: inline-block;
+    float: right;
+}
+
+.logo-img{
+	height: 40px;
+	width: 40px;
+}
+
+.textLogo{
+	top: 7px;
+	display: inline-block;
+	position: absolute;
+}
+
+.btn_headers{
+    display: inline-block;
+    padding: 0;
+	float: right;
+	margin-right: 10px;
+	width: 50px;
+	height: 30px;
+	border-radius: 20px;
+	font-size: 12px;											
+}
+
+.btn_login{	
+    display: inline-block;
+    padding: 0;
+	float: right;
+	width: 30%;
+	margin-right: 3.5%;
+	border-radius: 20px;
+	font-size: 15px;	
+}
+
+.form{
+    padding: 0;
+    margin-top: 5px;
+    display: inline-block;
+    float: right;
+}
+
+.login_txt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.login_window
+{
+	border: 1px solid black;
+	border-radius: 20px;
+	width: 90%;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 1%;
+	height: 40%;
+}
+
+.btn_create
+{
+	display: inline-block;
+	margin-left: 3%;
+	font-size: 22px;
+	text-align: center;
+}
+
+.inp
+{
+	display: inline;
+	width: 68%;
+	height: 25px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.txtin
+{
+	display: inline-block;
+	margin:0;
+	padding:0;
+	width:25%;
+	margin-top: 2%;
+	margin-left: 3%;
+	margin-bottom: 2%;
+}
